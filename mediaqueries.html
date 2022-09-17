@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: var(--green-200);
+      }
+
+      .container {
+        display: none;
+        flex-direction: row;
+      }
+
+      .element {
+        background-color: var(--gray-200);
+        border: 1px solid var(--gray-500);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 100px;
+      }
+
+      .hamburguer:hover ~ .container {
+        display: flex;
+      }
+
+      @media screen and (max-width: 720px) and (min-width: 480px) {
+        body {
+          background-color: var(--red-100);
+        }
+
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <i class="ri-menu-line hamburguer"></i>
+    <div class="container">
+      <div class="element">Element 1</div>
+      <div class="element">Element 2</div>
+      <div class="element">Element 3</div>
+    </div>
+  </body>
+</html>

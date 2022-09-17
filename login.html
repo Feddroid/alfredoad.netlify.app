@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    fieldset {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      border: 1px solid var(--gray-400);
+      border-radius: .5em;
+      font-size: 1rem;
+      width: 300px;
+    }
+
+    input {
+      border-radius: .5em;
+      font-size: .8em;
+      margin: 0;
+    }
+
+    .account-info {
+      padding: 20px;
+    }
+
+    .account-info label {
+      color: var(--stone-700);
+      display: block;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .account-info input {
+      border: 1px solid var(--gray-400);
+      color: var(--stone-700);
+      margin-top: 6px;
+      padding: 6px;
+      width: 100%;
+    }
+
+    .account-action {
+      background-color: var(--gray-100);
+      border-top: 1px solid var(--gray-400);
+      padding: 20px;
+      border-bottom-left-radius: .5em;
+      border-bottom-right-radius: .5em;
+      /* display: flex;
+      justify-content: space-between;
+      align-items: center; */
+    }
+
+    .account-action .btn {
+      border: 0;
+      color: var(--white);
+      cursor: pointer;
+      font-weight: bold;
+      padding: .5em 1em;
+      background: linear-gradient(var(--green-500), var(--green-600));
+      /* Usamos float para evitar flexbox */
+      float: left;
+    }
+
+    .account-action label {
+      color: var(--stone-500);
+      font-size: .8em;
+      margin: 10px;
+      /* Usamos float para evitar flexbox */
+      float: right;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="section-md">
+    <div class="container-md">
+      <form>
+        <fieldset class="account-info">
+          <label>
+            Username:
+            <input type="text" name="username" placeholder="Your name" required>
+          </label>
+          <label>
+            Password:
+            <input type="text" name="password" placeholder="Your password" required>
+          </label>
+        </fieldset>
+        <fieldset class="account-action">
+          <!-- <input class="button button--primary" type="submit" name="submit" value="Login"> -->
+          <input class="btn" type="submit" name="submit" value="Login">
+          <label>
+            <input type="checkbox" name="remember" required>
+            Stay signed in
+          </label>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
