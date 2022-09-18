@@ -1,0 +1,78 @@
+/* Portafolio */
+
+.portafolio__header {
+  text-align: center;
+}
+
+.portafolio__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 3.5rem;
+  padding: 1rem;
+}
+
+.portafolio__card {
+  list-style-type: none;
+  padding: .5rem;
+  transition: all .3s ease-in;
+}
+
+.portafolio__card:hover{
+  background-color: var(--primary-regular);
+  border-radius: 8px;
+}
+
+.portafolio__card .head-md {
+  font-size: 1.5rem;
+}
+
+.portafolio-icon__group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.portafolio-icon__item {
+  align-items: center;
+  display: flex;
+}
+
+.portafolio-icon__item ~ *,
+.portafolio__card a{
+  text-decoration: none;
+}
+
+.portafolio__card a,
+.portafolio__card a:visited{
+  color: initial;
+}
+
+.portafolio__card:hover .portafolio-icon__arrow {
+  /* color: var(--primary-regular); */
+  color: white;
+}
+
+.portafolio-icon__item .ri-xl{
+  background-color: var(--gray-100);
+  border-radius: 8px;
+  padding: 0.9rem 0.5rem;
+}
+
+.portafolio-tag__group{
+  display: flex;
+}
+
+.portafolio-icon__item .ri-ruby{
+  padding: 0.8rem 0.72rem;
+}
+
+.portafolio-tag__item{
+  background-color: var(--primary-light);
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  padding: 0 0.625rem;
+}
+
+.portafolio-icon__arrow {
+  color: var(--primary-dark);
+  transition: color .3s ease;
+}

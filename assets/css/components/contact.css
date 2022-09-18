@@ -1,0 +1,70 @@
+/* Contact */
+
+.contact__header {
+  text-align: center;
+}
+
+.contact__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.contact__card {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__card .head-md {
+  font-size: 1.5rem;
+}
+
+.contact-icon__group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-icon__item {
+  align-items: center;
+  display: flex;
+}
+
+.contact-icon__item ~ * {
+  text-decoration: none;
+}
+
+.contact-icon__group .contact-icon__arrow:hover {
+  color: var(--primary-regular);
+}
+
+.contact-icon__item .ri-xl{
+  background-color: var(--gray-100);
+  border-radius: 8px;
+  padding: 0.9rem 0.5rem;
+}
+
+.contact-tag__group{
+  display: flex;
+}
+
+.contact-icon__item .ri-ruby{
+  padding: 0.8rem 0.72rem;
+}
+
+.contact-tag__item{
+  background-color: var(--primary-light);
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  padding: 0 0.625rem;
+}
+
+.contact-icon__item .ri-vip-diamond-fill{
+  color: #EB5757;
+}
+
+.contact-icon__arrow {
+  color: var(--primary-dark);
+  transition: color .3s ease;
+}

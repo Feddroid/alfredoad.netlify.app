@@ -1,0 +1,154 @@
+/* Project page */
+
+
+
+.project-page-header {
+  padding-left:2rem;
+  padding-right:2rem;
+}
+
+.project-page-header__content {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); */
+  grid-template-columns: 1.21fr 0.89fr; 
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.project-page-header__card,
+.project-page__card {
+  list-style-type: none;
+}
+
+.project-page-header__card:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-page-header__card .head-md {
+  font-size: 1.5rem;
+}
+
+.project-page-header__card .text-lg {
+  color: var(--gray-700);
+  margin: 1.25rem 0 2.5rem 0;
+}
+
+.project-page-header__card .button,
+.project-page-team__icon{
+  text-decoration: none;
+}
+
+.project-page-team__icon{
+  color: var(--gray-500);
+  margin-right: 1.25rem;
+  transition: color .3s ease;
+}
+
+.project-page-team__icon:hover{
+  color: var(--gray-400);
+}
+
+.project-page-team__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
+  gap: 2rem;
+}
+
+.project-page-team__card .head-md {
+  font-weight: 600;
+}
+
+.project-page-team__card .text-xl {
+  line-height: 2rem;
+}
+
+.project-page-team__card .head-xxs{
+  margin: 1rem 0 0.5rem 0;
+}
+
+.project-page-team__image {
+  height: 256px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.project-page-built__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0 0 0;
+}
+
+.project-page-built .text-lg {
+  color: var(--gray-700);
+}
+
+.project-page-header__image{
+  height: 327px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.project-page-icon__group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-page-icon__item {
+  align-items: center;
+  display: flex;
+}
+
+.project-page-icon__item ~ * {
+  text-decoration: none;
+}
+
+.project-page-icon__item .ri-xl{
+  background-color: rgb(243 244 246 / 70%);
+  border-radius: 8px;
+  padding: .94rem .657rem;
+}
+
+.project-page-icon__item .ri-ruby{
+  padding: 0.89rem 0.875rem
+}
+
+.project-page-team .text-lg {
+  color: var(--gray-500);
+  margin: 1rem 0 3rem;
+}
+
+@media only screen and (max-width:400px) {
+  .project-page-header__content {
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  }
+
+  .project-page-header__card .button{
+    width: 100%;
+  }
+
+  .project-page-icon__group{
+    justify-content: center;
+  }
+
+  .project-page-built,
+  .project-page-team{
+    text-align: center;
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
+

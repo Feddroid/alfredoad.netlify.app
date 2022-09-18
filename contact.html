@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <section class="container-lg py-1">
+      <nav class="navbar">
+        <input id="menu-mobile" type="checkbox" />
+        <a href="/index.html" class="header__logo text-decoration-none">
+          <h1 class="head-md semibold ">Alfredo Arroyo</h1>
+          <label class="menu-button-container"  for="menu-mobile" id="toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+          <!-- <label class='menu-button-container' for="menu-mobile" id="toggle-open">
+            <i class="ri-menu-line ri-xl"></i>
+          </label>
+          <label class='menu-button-container' for="menu-mobile" id="toggle-close">
+            <i class="ri-close-line ri-xl"></i>
+          </label> -->
+        </a>
+        <ul class="expandable navbar__links list-style-none">
+          <li><a href="/article.html" class="link text semibold">Articles</a></li>
+          <li>
+            <a href="/portafolio.html" class="link text semibold">Portafolio</a>
+          </li>
+          <li><a href="/about.html" class="link text semibold">About</a></li>
+          <li>
+            <a href="/contact.html" class="button button--primary button--sm text-decoration-none">
+              Contact Me
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main class="section-md contact">
+    <div class="container-lg">
+      <div class="contact__header">
+        <h2 class="head-lg semibold">Contact Me</h2>
+        <p class="text-lg light">Looking to expand your team? Or do you need a web developer for a specific project? If I can help you in any way don't hesitate to fill this form.</p>
+      </div>
+      <ul class="contact__content">
+        <li class="contact__card">
+          <label for="first-name" class="text-xs light overline"
+              >First name</label
+            >
+            <input
+              class="input"
+              id="first-name"
+              type="text"
+              name="first-name"
+              placeholder="First name"
+            />
+        </li>
+        <li class="contact__card">
+          <label for="last-name" class="text-xs light overline"
+              >Last name</label
+            >
+            <input
+              class="input"
+              id="last-name"
+              type="text"
+              name="last-name"
+              placeholder="Last name"
+            />
+        </li>
+        <li class="contact__card">
+          <label for="email" class="text-xs light overline"
+          >Email</label
+        >
+        <input
+          class="input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
+        </li>
+        <li class="contact__card">
+          <label for="company" class="text-xs light overline"
+          >Company</label
+        >
+        <input
+          class="input"
+          id="company"
+          type="text"
+          name="company"
+          placeholder="Company"
+        />
+        </li>
+        <li class="contact__card">
+          <label for="phone" class="text-xs light overline"
+          >Phone</label
+        >
+        <input
+          class="input"
+          id="phone"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+        />
+        </li>
+        <li class="contact__card">
+          <label for="country" class="text-xs light overline"
+              >Country</label
+            >
+            <select
+              name="country"
+              id="country"
+              class="text-md light select"
+            >
+              <option value="" hidden>Select one option</option>
+              <option value="BO">Bolivia</option>
+              <option value="CO">Colombia</option>
+              <option value="EC">Ecuador</option>
+              <option value="PE">Perú</option>
+              <option value="VE">Venezuela</option>
+            </select>
+        </li>
+        <li class="contact__card">
+          <p class="text-xs light overline">How can I help you?</p>
+            <div class="flex gap-0.5">
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="check-1"
+                  id="check-1"
+                  class="checkbox__input"
+                />
+                <div class="checkbox__text-group">
+                  <label for="check-1" class="text-sm light checkbox__label"
+                    >Job Offer</label
+                  >
+                  <span class="text-xs light checkbox__help">If you are looking to expand your team</span>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="check-2"
+                  id="check-2"
+                  class="checkbox__input"
+                />
+                <div class="checkbox__text-group">
+                  <label for="check-2" class="text-sm light checkbox__label"
+                    >Project Offer</label
+                  >
+                  <span class="text-xs light checkbox__help">If you are looking to expand your team</span>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="check-3"
+                  id="check-3"
+                  class="checkbox__input"
+                />
+                <div class="checkbox__text-group">
+                  <label for="check-3" class="text-sm light checkbox__label"
+                    >Collaboration</label
+                  >
+                  <span class="text-xs light checkbox__help">If you are looking to expand your team</span>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="check-4"
+                  id="check-4"
+                  class="checkbox__input"
+                />
+                <div class="checkbox__text-group">
+                  <label for="check-4" class="text-sm light checkbox__label"
+                    >Other</label
+                  >
+                </div>
+              </div>
+            </div>
+        </li>
+      </ul>
+      <button class="button button--lg button--primary w-full">Send</button>
+    </div>
+  </main>
+
+</body>
+</html>

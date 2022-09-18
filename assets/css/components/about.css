@@ -1,0 +1,57 @@
+/* About */
+
+.about__header {
+  text-align: center;
+}
+
+.about-skills {
+  padding-left:2rem;
+  padding-right:2rem;
+}
+
+.about-skills__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.about img{
+  border-radius: 8px;
+}
+
+.about-skills__card {
+  list-style-image: url("/assets/img/icon.svg");
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+
+.about-skills__card .head-md {
+  font-size: 1.5rem;
+}
+
+.about-hobbies__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.about-hobbies__card {
+  text-align: center;
+}
+
+.about-hobbies__card .head-md {
+  font-weight: 600;
+}
+
+.about-hobbies__card .text-xl {
+  line-height: 2rem;
+}
+
+.about-hobbies__image{
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
